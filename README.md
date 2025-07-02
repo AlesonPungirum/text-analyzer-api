@@ -70,7 +70,7 @@ O projeto utiliza uma arquitetura em camadas para melhor organização e manuten
 
 ```bash
 git clone https://github.com/AlesonPungirum/text-analyzer-api
-cd text-analyzer-api-nodejs
+cd text-analyzer-api
 ```
 
 ### 2. Instale as dependências
