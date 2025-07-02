@@ -1,0 +1,43 @@
+{
+  "name": "text-analyzer-api-nodejs",
+  "version": "1.0.0",
+  "description": "API de análise de texto com integração de IA usando Node.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon app.js",
+    "test": "node test.js",
+    "setup": "node setup.js",
+    "pm2:start": "pm2 start ecosystem.config.js --env production",
+    "pm2:stop": "pm2 stop ecosystem.config.js",
+    "pm2:restart": "pm2 restart ecosystem.config.js",
+    "docker:build": "docker build -t text-analyzer-api .",
+    "docker:run": "docker run -p 3000:3000 --env-file .env text-analyzer-api"
+  },
+  "keywords": [
+    "api",
+    "text-analysis",
+    "sentiment-analysis",
+    "nodejs",
+    "express",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "swagger-autogen": "^2.23.7"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
